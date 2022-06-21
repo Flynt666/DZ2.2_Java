@@ -2,18 +2,18 @@ import com.sun.source.tree.IfTree;
 
 public class Main {
     public static void main(String[] args) {
-        int s = 500; //сумма на счёте
-        int p = 4300; //сумма пополнения
+        int amount = 500; //сумма на счёте
+        int add = 4300; //сумма пополнения
 
-        if (p > 1000) {
-            s = s + p + p / 100;
+        if (add > 1000) {
+            amount = amount + add + add / 100;
 
-            System.out.println("Количество бонусов " + p / 100);
-            System.out.println("Сумма на счёте = " + s);
+            System.out.println("Количество бонусов " + add / 100);
+            System.out.println("Сумма на счёте = " + amount);
 
         } else {
-            s = s + p;
-            System.out.println("Сумма на счёте = " + s);
+            amount = amount + add;
+            System.out.println("Сумма на счёте = " + amount);
             System.out.println("Бонусы не начислены");
         }
 
